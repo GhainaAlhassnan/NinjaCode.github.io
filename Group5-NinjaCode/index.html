@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf-8">
+		<title>Ninja </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel = "stylesheet" href="HomePageStyleSheet.css">
+        <link rel="stylesheet" href="GeneralStyle.CSS">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<script src='javaScreptModel.js'></script>	
+
+			</head>
+
+
+	<body id="BodychangebackgrondColor">
+		<header id="headerChangeColor">
+        
+			
+			<button onclick="myFunction2()">dark theme</button>
+			<button onclick="myFunction3()" >light theme</button>
+		
+	
+
+			<button id="myBtn2"> <img src="images/edit.png" alt= 'edit' height="30" width="30"></button>
+			<!-- Trigger/Open The Modal -->
+					  
+			<img src="images/NingaCodeLogo.png" alt="Ninja Code Logo" width="150" height="60" >
+			<nav><ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="parent.html">Parent Dashboard</a></li>
+				<li><a href="AdministratorDashboard.html">Administrator Dashboard</a></li>
+				<li><a href="Courses.html">Courses</a></li>
+				<li><a href="tutor.html">Tutor</a></li>
+			</ul></nav>	
+			
+
+			<div id="form-popup" class="modal">
+   
+				<!-- Modal content -->
+				<div class="modal-content2 ">
+					<div class="modal-header">
+					  <span class="close">&times;</span>          
+					  <h2>Customize </h2>
+					</div>
+					
+			        <div class="modal-body center-modal" >
+					  <form class ="center-modal" action="#" method="post" >
+	  
+						<p style= "color:black">Background:</p>
+						<div class ="colorPicker">
+	  
+						  <a onclick="changebackgrondColor('pink')" id="pink">#FFF0F5</a>
+						  <a onclick="changebackgrondColor('gray')" id="gray">#e4e7e7  </a>
+						  <a onclick="changebackgrondColor('white')" id="white">#ffffff</a>
+						  <a onclick="changebackgrondColor('dark')" id="dark">#363945</a>
+	  
+					 </div> 
+					 
+						
+					
+					  <p style= "color:black">Font:</p>
+						
+					  <div class ="colorPicker">
+	  
+						<a onclick="changefontColor('black')" id="black">rgb(29, 29, 29)</a>
+						<a onclick="changefontColor('darkGray')" id="darkGray">#949494</a>
+						<a onclick="changefontColor('darkred')" id="darkred">  #508d69</a>
+						<a onclick="changefontColor('white')" id="white1">#ffffff</a>
+					   
+
+						
+				   </div> 
+				   <br>
+				   
+					  </form>
+				 </div>
+				  </div>
+
+            </header>
+
+
+        <div class="youAreHere">
+            <a class="here" href='Home.html'>   Home</a></div>
+      
+		<div style="top:70px;">
+			<h2 >Our Vision</h2>
+				<p style="font-family:cursive">Ninja Code streamlines course browsing, tutor schedule management, and child registration for parents. 
+				Our aim is to save time and effort, providing users with the convenience of exploring and registering for courses from 
+				anywhere with an internet connection. The website facilitates administrators in overseeing tutor schedules, simplifies 
+				the registration process, and enhances the learning environment for kids. 
+				This eliminates manual paperwork and physical visits, making the entire process efficient and user-friendly for both parents and administrators.</p>
+		</div>
+		<hr>
+		<main> 
+			
+			<h3 style="text-align:center;">Courses</h3>
+
+			<div class="course-container">
+				<div  class="course-card">
+					<img src="images/course1.jpg" alt="Course 1" width="250px" height="150px">
+					<div class="course-title">Course 1 - Introduction to Coding for Kids</div>
+					<div class="course-details">
+						<div class="course-description">This course introduces kids to the basics of coding using visual programming languages.
+							Students will learn fundamental <a href="" style="color:blue"><br>...read more</a>
+						</div>
+					</div>
+				</div>
+    
+				<div  class="course-card">
+					<img src="images/course2.jpg" alt="Course 2" width="250px" height="150px">
+					<div class="course-title">Course 2 - Building Interactive Websites for Kids</div>
+					<div class="course-details">
+						<div class="course-description">
+							In this course, kids will learn HTML, CSS, and JavaScript to create interactive <a href="" style="color:blue"><br>...read more</a> 
+						</div>
+					</div>
+				</div>
+    
+				<div  class="course-card">
+					<img src="images/course3.jpg" alt="Course 3" width="250px" height="150px">
+					<div class="course-title">Course 3 - Introduction to Game Development for Kids</div>
+					<div class="course-details">
+						<div class="course-description">
+							This course introduces kids to the world of game development. They will learn how to <a href="" style="color:blue">...read more</a>
+						</div>
+					</div>
+				</div>
+        
+				<div  class="course-card">
+					<img src="images/course4.jpg" alt="Course 4" width="250px" height="150px">
+					<div class="course-title">Course 4 - Advanced Coding Concepts for Kids</div>
+					<div class="course-details">
+						<div class="course-description">
+							This course is designed for kids who have a solid foundation in coding and want to <a href="" style="color:blue">...read more</a>
+						</div>
+					</div>
+				</div>
+    
+				<div  class="course-card">
+					<img src="images/course5.jpg" alt="Course 5" width="250px" height="150px">
+					<div class="course-title">Course 5 - Introduction to Robotics and Coding for Kids</div>
+					<div class="course-details">
+						<div class="course-description">
+							This course combines robotics and coding to introduce kids to the exciting field of <a href="" style="color:blue">...read more</a>
+						</div>
+					</div>
+				</div>
+				
+				<div  class="course-card">
+					<img src="images/course6.jpg" alt="Course 6" width="250px" height="150px">
+					<div class="course-title">Course 6 - App Development for Kids</div>
+					<div class="course-details">
+						<div class="course-description">
+							In this course, kids will learn how to create mobile apps using platforms like MIT App Inventor 
+							or Swift Playgrounds. They will <a href="" style="color:blue">...read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<aside><a class="here" href="Courses.html" >More Courses</a></aside>
+		</main>
+		<hr>
+		
+		<h3 style="text-align:center;">Reviews</h3>
+		<div class="Reviews">	
+			<div class="Review" id="profPic1">
+				<img src="images/Emma's mom.jpg" alt="Profile Picture" width="250" height="150">
+                <div class="course-rating">Rating: 4.5/5</div>
+				<fieldset><legend>Emma'sMom123 says</legend>"My daughter Emma absolutely loves this learning website! The interactive games make learning so much
+				fun for her. I've noticed a significant improvement in her counting and vocabulary skills. The colorful and engaging interface keeps her
+				entertained while learning valuable concepts. A definite thumbs up!"</fieldset>
+			</div>
+			
+			<div class="Review" id="profPic2">
+				<img src="images/Mom and son.jpg" alt="Profile Picture" width="250" height="150">
+                <div class="course-rating">Rating: 3.5/5</div>
+				<fieldset><legend>SuperStudentSam says</legend>"As a parent, finding an educational website that is both entertaining and educational is a game-changer.
+				My son Sam enjoys the variety of activities, from programming games to making websites. The progress tracker allows me to see how well he's doing, 
+				and the positive reinforcement keeps him motivated. Highly recommended!"</fieldset>
+			</div>
+			
+			<div class="Review" id="profPic3">
+               
+			<img src="images/Mom of three.jpeg" alt="Profile Picture" width="250" height="150">
+            <div class="course-rating">Rating: 4/5</div>
+			<fieldset><legend>EducatorMomofThree says</legend>"I'm a mom of three, and this website has been a lifesaver for our homeschooling journey. The curriculum is
+			aligned with educational standards, and the diversity of subjects covered is impressive. The interactive lessons cater to different learning styles,
+			ensuring each of my kids can benefit. Thank you for making learning so accessible and enjoyable!"</fieldset>
+			</div>
+		</div>
+		
+        <footer class="footer" >
+            <div class="waves" >
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+              </div>
+          
+              <h3 class="footerh3">Contact Us</h3>         
+              <ul class="menu" style="z-index: 10;">
+                <li class="menu__item"><a class="menu__link" href="#" style="color:#7D868B ;">Ninjacode@example.com |</a></li>
+                <li class="menu__item"><a class="menu__link" href="#" style="color:#7D868B ;"> 0550055055 |</a></li>
+                <li class="menu__item"><a class="menu__link" href="#" style="color:#7D868B ;"> NinjaCodeHelp@example.com</a></li>
+                <!-- <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Contact</a></li> -->
+          
+              </ul>
+            <p>&#169;2023 Ninja</p>         
+        </footer>
+	</body>
+</html>

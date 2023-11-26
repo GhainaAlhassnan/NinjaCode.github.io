@@ -1,0 +1,141 @@
+/**header {background-color:#ef4748;
+		color:white;}
+		
+header ul{	list-style-type: none;
+			display: flex;
+			justify-content:space-between;
+			float: right;}**/
+/*			
+header {
+	background-color: #ef4748;
+	color: white;
+}
+
+ ul {
+	list-style-type: none;
+	display: flex;
+}
+
+/*it's requird to be flex next to each other*/
+/*
+header nav {
+	float: right;
+}
+
+/*for navigation bar to be on the right*/
+/*
+li {
+	padding: 5px;
+}
+
+/*spacing between links in navigation bar*/
+/*
+ a {
+	color: white;
+}
+*/
+			
+
+body{background-color:#fafbfd;}
+		
+		
+		h2{	font-size: 40;
+			font:bold;
+			text-align: center;}
+			
+		p{text-align: center;
+		  padding-right: 10em;
+		  padding-left: 10em}
+		  
+	/* 
+		
+footer{background-color:#414242;
+		color:#fafbfd;
+		text-align:center;}
+.contact{ display: inline;
+			text-align:center;}
+*/
+aside{text-align:right;}
+			
+a:link{color:white;}
+a:visited{color:white;}
+
+.Review h2{text-align: center;
+		padding-right:20em;
+	padding-left: 10em;}
+	
+.course-container {
+    justify-content: space-between;
+    display: flex;
+flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+   justify-content: space-around;
+   width: 77%;
+   float: none;
+   margin-left: 150px;
+ 
+   
+  }
+  
+    
+.course-card img{width:100%;
+				height:175px}
+.Reviews{
+	justify-content: space-between;
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.Review img{ width: 100%;
+			height: 150px}
+
+.Review{
+	width:300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;}
+	
+.course-card {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    }
+    
+.course-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+.course-card:hover .course-details {
+    display: block;
+    }
+    
+
+    
+.course-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	
+    }
+    
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+	text-align:center
+    }
+    
+.course-description {
+    margin-top: 10px;
+    }
+   

@@ -1,0 +1,112 @@
+body {
+    background-color: #fafbfd;
+}
+
+
+/*it's requird to be flex next to each other*/
+
+header nav {
+    float: center;
+}
+
+/*for navigation bar to be on the right*/
+
+header li {
+    padding: 5px;
+}
+
+/*spacing between links in navigation bar*/
+.card {
+    min-width: 300px;
+    height: 450px;
+
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px 0px;
+    padding: 10px;
+    margin: 0.5px;
+
+}
+
+.img-div img {
+    width: 90%;
+    height: 60%;
+    margin-top: 20px;
+    border: solid #ef4748;
+}
+
+*/ .img-div {
+
+    background-size: 100px 100px;
+    padding: 50px;
+    /*width: 100%;*/
+    height: 190px;
+    border-radius: 10px;
+
+}
+
+.card p {
+    font-size: 14px;
+}
+
+
+
+.container {
+    display: flex;
+    /*
+    justify-content: center;
+    align-items: center;
+    */
+    overflow-x: scroll;
+    gap: 10px;
+
+}
+
+
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    margin-bottom: 190px;
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 550px;
+    }
+}
+
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 770px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+
+
+
+/*.container {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    /* margin-top: 8px;
+    margin-bottom: 55px;
+    overflow-x: scroll;

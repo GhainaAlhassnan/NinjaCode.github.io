@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninja </title>
+  <style>
+    @import url("stylesheet2.css");
+  </style>
+  <link rel="stylesheet" href="GeneralStyle.CSS">
+  <link rel="shortcut icon" href="./logoNinja.png" type="images/png">
+  <script src="courseEvaluationScript.js"></script>
+  <script src="javaScreptModel.js"></script>
+</head>
+
+
+
+<body id="BodychangebackgrondColor">
+  <header id="headerChangeColor">
+      
+    
+    <button onclick="myFunction2()">dark theme</button>
+    <button onclick="myFunction3()" >light theme</button>
+  
+
+
+    <button id="myBtn2"> <img src="images/edit.png" alt= 'edit' height="30" width="30"></button>
+    <!-- Trigger/Open The Modal -->
+
+    <img src="images/NingaCodeLogo.png" alt="Ninga Code Logo" height=59vw width=150vw>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="parent.html">Parent Dashboard</a></li>
+        <li><a href="AdministratorDashboard.html">Administrator Dashboard</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="tutor.html">Tutor</a></li>
+      </ul>
+    </nav>
+
+    <div class="youAreHere" style="padding-top: 90px; z-index: -1;">
+      <a class="here" href='index.html'> Home</a> <a class="here" href='parent.html'>- Parent Dashboard</a><a
+        class="here" href='CourseEvaluation.html'>- Course Evaluation</a>
+    </div>
+
+
+
+
+
+    <div id="form-popup" class="modal">
+   
+      <!-- Modal content -->
+      <div class="modal-content2 ">
+        <div class="modal-header">
+          <span class="close">&times;</span>          
+          <h2>Customize </h2>
+        </div>
+        
+            <div class="modal-body center-modal" >
+          <form class ="center-modal" action="#" method="post" >
+  
+          <p style= "color:black">Background:</p>
+          <div class ="colorPicker">
+  
+            <a onclick="changebackgrondColor('pink')" id="pink">#FFF0F5</a>
+            <a onclick="changebackgrondColor('gray')" id="gray">#e4e7e7  </a>
+            <a onclick="changebackgrondColor('white')" id="white">#ffffff</a>
+            <a onclick="changebackgrondColor('dark')" id="dark">#363945</a>
+  
+         </div> 
+         
+          
+        
+          <p style= "color:black">Font:</p>
+          
+          <div class ="colorPicker">
+  
+          <a onclick="changefontColor('black')" id="black">rgb(29, 29, 29)</a>
+          <a onclick="changefontColor('darkGray')" id="darkGray">#949494</a>
+          <a onclick="changefontColor('darkred')" id="darkred">  #508d69</a>
+          <a onclick="changefontColor('white')" id="white1">#ffffff</a>
+           
+
+          
+         </div> 
+         <br>
+         
+          </form>
+       </div>
+        </div>
+
+          </header>
+
+
+
+
+
+
+  <main class="content">
+
+
+    </fieldset>
+    <form>
+      <fieldset class="EvaluationF">
+
+
+
+
+        <legend>Course Evaluation</legend>
+
+
+
+        </nav>
+
+
+        <nav class="navdrop">
+          <select name="couresList" class="h2drop ulEva">
+            <option value="pleaseSelect" checked>select a course</option>
+            <option>Introduction to Coding for Kids</option>
+            <option>Building Interactive Websites for Kids</option>
+            <option>Introduction to Game Development for Kids</option>
+            <option>App Development for Kids</option>
+            <option>Advanced Coding Concepts for Kids</option>
+            <option>Introduction to Robotics and Coding for Kids</option>
+
+          </select>
+        </nav>
+
+
+        <div class="ratingBox">
+          <div class="rating-stars">
+            <h3> Rate </h3>
+            <input type="radio" name="rating" id="rs0" value="0" checked><label for="rs0"></label>
+            <input type="radio" name="rating" id="rs1" value="1"><label for="rs1"></label>
+            <input type="radio" name="rating" id="rs2" value="2"><label for="rs2"></label>
+            <input type="radio" name="rating" id="rs3" value="3"><label for="rs3"></label>
+            <input type="radio" name="rating" id="rs4" value="4"><label for="rs4"></label>
+            <input type="radio" name="rating" id="rs5" value="5"><label for="rs5"></label>
+            <span class="number"></span>
+          </div>
+
+        </div>
+
+
+
+        <label class="textArealabel" for="Feedback">Write your feedback</label>
+
+        <textarea style="margin-top:90px ;" id="Feedback" name="entery" rows="6" cols="4" placeholder="type your message here please!"></textarea>
+        </ul>
+
+
+        <!-- <input type="submit" class="submitbotEval" name="submit" onclick="submitRating()"> -->
+        <!-- it didn't work with input submit and i look it up & the solution was to make your own button -->
+        <input onclick="submitRating()" type="submit" class="submitbotEval" name="submit" value="submit">
+
+      </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  <!-- end -->
+
+  <script src="CourseEvaluation.js"></script>
+
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+
+    <h3 class="footerh3">Contact Us</h3>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Ninjacode@example.com |</a></li>
+      <li class="menu__item"><a class="menu__link" href="#"> 0550055055 |</a></li>
+      <li class="menu__item"><a class="menu__link" href="#"> NinjaCodeHelp@example.com</a></li>
+
+    </ul>
+    <p>&#169;2023 Ninja</p>
+  </footer>
+
+</body>
+
+</html>

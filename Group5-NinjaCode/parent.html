@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Ninja </title>
+  <style> @import url("stylesheet2.css"); </style>
+  <link rel="stylesheet" href="GeneralStyle.CSS">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script src='javaScreptModel.js'></script>	
+
+</head>
+
+
+
+<body id="BodychangebackgrondColor">
+  <header id="headerChangeColor">
+      
+    
+    <button onclick="myFunction2()">dark theme</button>
+    <button onclick="myFunction3()" >light theme</button>
+  
+
+
+    <button id="myBtn2"> <img src="images/edit.png" alt= 'edit' height="30" width="30"></button>
+    <!-- Trigger/Open The Modal -->
+          
+  <img src="images/NingaCodeLogo.png" alt="Ninga Code Logo" height=59vw width=150vw>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="parent.html">Parent Dashboard</a></li>
+    <li><a href="AdministratorDashboard.html">Administrator Dashboard</a></li>
+    <li><a href="Courses.html">Courses</a></li>
+    <li><a href="tutor.html">Tutor</a></li>
+  </ul></nav>
+        
+        <div class="youAreHere" style="padding-top: 90px; z-index: -1;">
+            <a class="here" href='Home.html'>   Home</a><a class="here" href='AdministratorDashboard.html'>- Administrator Dashboard</a></div>
+
+
+            <div id="form-popup" class="modal">
+   
+              <!-- Modal content -->
+              <div class="modal-content2 ">
+                <div class="modal-header">
+                  <span class="close">&times;</span>          
+                  <h2>Customize </h2>
+                </div>
+                
+                    <div class="modal-body center-modal" >
+                  <form class ="center-modal" action="#" method="post" >
+          
+                  <p style= "color:black">Background:</p>
+                  <div class ="colorPicker">
+          
+                    <a onclick="changebackgrondColor('pink')" id="pink">#FFF0F5</a>
+                    <a onclick="changebackgrondColor('gray')" id="gray">#e4e7e7  </a>
+                    <a onclick="changebackgrondColor('white')" id="white">#ffffff</a>
+                    <a onclick="changebackgrondColor('dark')" id="dark">#363945</a>
+          
+                 </div> 
+                 
+                  
+                
+                  <p style= "color:black">Font:</p>
+                  
+                  <div class ="colorPicker">
+          
+                  <a onclick="changefontColor('black')" id="black">rgb(29, 29, 29)</a>
+                  <a onclick="changefontColor('darkGray')" id="darkGray">#949494</a>
+                  <a onclick="changefontColor('darkred')" id="darkred">  #508d69</a>
+                  <a onclick="changefontColor('white')" id="white1">#ffffff</a>
+                   
+      
+                  
+                 </div> 
+                 <br>
+                 
+                  </form>
+               </div>
+                </div>
+      
+                  </header>
+      
+   
+ <main class="content" >
+            <div class="students-container">
+				</div>
+			<!-- Add an empty div with the id "kidsContainer" where the children will be displayed -->
+			<div id="kidsContainer" class="students-container"></div>
+			<fieldset class="yourChildrenFieldset">
+		<!-- <h3 class="children">Your children</h3>  -->
+ 
+ 
+		<!-- teeeeeeeeeeeeeeeeeeesssssssssssssssssssssttttttttttttttttt -->
+			<div id="mainCoantiner">
+			<!--dust particel-->
+				<div class="margin-body">
+    
+				<div>
+					<div class="starsec"></div>
+					<div class="starthird"></div>
+					<div class="starfourth"></div>
+					<div class="starfifth"></div>
+				</div>
+			<!--Dust particle end--->
+
+			<!-- ------------------Children List --------------------- -->
+			<fieldset class="YourChildrenF">
+
+				<h1 class="h1Children">Your children</h1>
+				<ul class="ulChildren">
+					<li style="--accent-color:#60c5a6">
+						<div class="icon"><i class="fa fa-user"></i></div>
+						<div class="Name">Ahmad</div>
+					</li>
+					<li style="--accent-color:#f20071">
+						<div class="icon"><i class="fa fa-user"></i></div>
+						<div class="Name">Sara</div>
+					</li>
+					<li style="--accent-color:#DAE438">
+						<div class="icon"><i class="fa fa-user"></i></div>
+						<div class="Name"><span id="addName"></span><script>document.getElementById("addName").innerHTML = localStorage.getItem("Name");</script></div>
+					</li>
+				</ul>
+			</fieldset>
+  </div>
+</fieldset>
+
+
+<fieldset class="f2">
+    <h3 class="mind">what's on your mind?</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+  
+        <a class="button" href="CourseEvaluation.html" style="--color:#a49061;">
+            
+    
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Course Evaluation
+    </a>
+
+           <a class="button" href="CourseEnrolment.html" style="--color:  #900c0c;">
+        
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Course Enrollment
+    </a>
+   
+        <a class="button" href="Registerkid.html" style="--color:#e4c87f;">
+          
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Register a new kid
+    </a>
+  </div>
+</fieldset>
+	<script>
+		function getUserName(){
+			// Retrieve the name of the child
+			Names=document.getElementById("addName").innerHTML = localStorage.getItem("Name");}
+	
+		function getUserEmail(){
+			// Retrieve the email of the parent
+			document.getElementById("EmailInput").innerHTML = localStorage.getItem("Email");}
+			
+		function getUserTel(){
+			// Retrieve the telephone number of the parent
+			document.getElementById("telInput").innerHTML = localStorage.getItem("PhoneNo");}
+		function getUserDOB(){
+			// Retrieve the date of birth
+			document.getElementById("DateOfBirth").innerHTML = localStorage.getItem("DOB");}
+	
+		function getUserInfo(){
+			// Retrieve
+			document.getElementById("NameInput").innerHTML = localStorage.getItem("Name");
+			document.getElementById("EmailInput").innerHTML = localStorage.getItem("Email");
+			document.getElementById("telInput").innerHTML = localStorage.getItem("PhoneNo");
+			document.getElementById("DateOfBirth").innerHTML = localStorage.getItem("DOB");}
+	</script>
+	
+</main>
+<!-- end -->
+
+
+          <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+              </div>
+          
+           
+              <h3 class="footerh3">Contact Us</h3>         
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#">Ninjacode@example.com |</a></li>
+                <li class="menu__item"><a class="menu__link" href="#"> 0550055055 |</a></li>
+                <li class="menu__item"><a class="menu__link" href="#"> NinjaCodeHelp@example.com</a></li>
+       
+        
+            </ul>
+            <p>&#169;2023 Ninja</p>         
+        </footer>
+          
+        </body>
+        
+        </html>
+      

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Ninja </title>
+		<style> @import url("stylesheet2.css"); </style>
+		<script src="RegisterJScript.js"></script>
+		<link rel="stylesheet" href="GeneralStyle.CSS">
+		<link rel="shortcut icon" href="./logoNinja.png" type="images/png" >
+		<link rel="icon" type="image/png" href="images/favicon.png">
+    <script src='javaScreptModel.js'></script>	
+
+		<script>
+			function saveUserName(){
+				var names = document.getElementById("NameInput").value;
+				localStorage.setItem("Name", names);
+				return false;
+				//var i =0;
+			//if(i==1){
+			//saveUserName1();
+			//break;
+			//}
+				//let names = [];
+				
+				//function saveUserName(){
+				//let names = [];
+				//names = names.push(document.getElementById("NameInput").value);
+				//let string = JSON.stringify(names);
+				//localStorage.setItem("Name", string);
+				//return false;}
+		
+				//var names = document.getElementById("NameInput").value;
+
+				//names = names.push(document.getElementById("NameInput").value);
+				//let string = JSON.stringify(names);
+				//localStorage.setItem("Name", string);
+			 ///i++;
+				//return false;
+				}
+				
+				
+			function saveEmail(){
+				var emails =document.getElementById("EmailInput").value;
+				localStorage.setItem("Email", emails);
+				return false;}
+				
+			function savePhoneNo(){
+				var phoneNos =document.getElementById("telInput").value;
+				localStorage.setItem("PhoneNo", phoneNos);
+				return false;}
+			
+			function saveDOB(){
+				var DOBs =document.getElementById("DateOfBirth").value;
+				localStorage.setItem("DOB", DOBs);
+				return false;}
+		</script>
+	</head>
+
+	
+	<body id="BodychangebackgrondColor">
+		<header id="headerChangeColor">
+        
+			
+			<button onclick="myFunction2()">dark theme</button>
+			<button onclick="myFunction3()" >light theme</button>
+		
+	
+
+			<button id="myBtn2"> <img src="images/edit.png" alt= 'edit' height="30" width="30"></button>
+			<!-- Trigger/Open The Modal -->
+					  
+			<img src="images/NingaCodeLogo.png" alt="Ninga Code Logo" height=59vw width=150vw>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="parent.html">Parent Dashboard</a></li>
+					<li><a href="AdministratorDashboard.html">Administrator Dashboard</a></li>
+					<li><a href="Courses.html">Courses</a></li>
+					<li><a href="tutor.html">Tutor</a></li>
+				</ul>
+			</nav>
+			<div class="youAreHere" style="padding-top: 90px; z-index: -1;">
+			<a class="here" href='index.html'>Home</a><a class="here" href='parent.html'>- Parent Dashboard </a><a class="here" href='Registerkid.html'>- Register a new kid</a></div>
+
+			<div id="form-popup" class="modal">
+   
+				<!-- Modal content -->
+				<div class="modal-content2 ">
+					<div class="modal-header">
+					  <span class="close">&times;</span>          
+					  <h2>Customize </h2>
+					</div>
+					
+			        <div class="modal-body center-modal" >
+					  <form class ="center-modal" action="#" method="post" >
+	  
+						<p style= "color:black">Background:</p>
+						<div class ="colorPicker">
+	  
+						  <a onclick="changebackgrondColor('pink')" id="pink">#FFF0F5</a>
+						  <a onclick="changebackgrondColor('gray')" id="gray">#e4e7e7  </a>
+						  <a onclick="changebackgrondColor('white')" id="white">#ffffff</a>
+						  <a onclick="changebackgrondColor('dark')" id="dark">#363945</a>
+	  
+					 </div> 
+					 
+						
+					
+					  <p style= "color:black">Font:</p>
+						
+					  <div class ="colorPicker">
+	  
+						<a onclick="changefontColor('black')" id="black">rgb(29, 29, 29)</a>
+						<a onclick="changefontColor('darkGray')" id="darkGray">#949494</a>
+						<a onclick="changefontColor('darkred')" id="darkred">  #508d69</a>
+						<a onclick="changefontColor('white')" id="white1">#ffffff</a>
+					   
+
+						
+				   </div> 
+				   <br>
+				   
+					  </form>
+				 </div>
+				  </div>
+
+            </header>
+   
+		<main class="content" >
+			<fieldset class="RegisterkidF">
+				<h3 class="children">Register a kid</h3> 
+				<div class="modal-content">
+					<div class="modal-body">
+						<form action="parent.html" action=" CourseEnrolment.html" id ="regForm" class="go-right" method="POST">
+							<!--Name-->
+							<div>
+								<!--title="Your name should only contain letters [A-Z]"-->
+								<input onchange="checkName()" type="text" id="NameInput" name="NameInput" title="Your name should only contain letters" pattern="[A-Za-z, ]{1,16}" required> 
+								<label class="label" for="NameInput">Name</label> 
+							</div> 
+							
+							<!--Email-->
+							<div>
+								<input onchange="checkMail()" id="EmailInput" title= "Your email should be in the format name@mail.com" type="email" name="EmailInput" required>
+								<label class="label" for="EmailInput">Email</label>
+							</div>
+	
+							<!--Phone Number-->
+							<div>
+								<input onchange="checkTel()" id="telInput" title="Your phone number should only contain numbers [0-9] and 10 digits long." type="tel" name="telInput" pattern="[0-9]{10}" required>
+								<label class="label" for="telInput">Phone Number</label> 
+							</div>
+						
+							<!--gender-->
+							<div>
+								<label>Gender</label>   
+								<ul class="radiolist">
+									<li><input type="radio" name="Gender" value="male">male</li>
+									<li><input type="radio" name="Gender" value="female">female</li>
+								</ul>
+							</div>
+						
+							<!--date of Birth-->
+							<div>
+								<label class="selectLabel">Date Of Birth</label> <br>
+								<input onchange="checkDOB()" type="date" id="DateOfBirth" name="filename" value="2000-01-01" max="2017-01-01" title="Year of birth cannot be 2017 or above." required>
+							</div>
+						
+							<!--File upload-->
+							<div>  
+								<label for="PhotoUpload">Photo</label>
+								<input onchange="checkPhoto()" type="file" id="myFile" name="filename" title="Please insert your child's ID picture." required>
+							</div>
+						
+							<div>
+								<input   onclick="saveUserName()" onclick="saveEmail()" onclick="savePhoneNo()" onclick="saveDOB()" type="submit" class="submitRigester" ID="submitRigesterKid" name="join" value="Join"><!--Link it to the parent page-->
+							</div>
+						</form>
+					</div>
+				</div>
+			</fieldset>
+		</main>
+		<!-- end -->
+
+		<footer class="footer">
+			<div class="waves">
+				<div class="wave" id="wave1"></div>
+				<div class="wave" id="wave2"></div>
+				<div class="wave" id="wave3"></div>
+				<div class="wave" id="wave4"></div>
+			</div>
+  
+			<h3 class="footerh3">Contact Us</h3>         
+			<ul class="menu">
+				<li class="menu__item"><a class="menu__link" href="#">Ninjacode@example.com |</a></li>
+				<li class="menu__item"><a class="menu__link" href="#"> 0550055055 |</a></li>
+				<li class="menu__item"><a class="menu__link" href="#"> NinjaCodeHelp@example.com</a></li>
+			</ul>
+			<p>&#169;2023 Ninja</p>         
+		</footer>    
+	</body>
+</html>

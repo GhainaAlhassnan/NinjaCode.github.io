@@ -1,0 +1,337 @@
+<!DOCTYPY html>
+<html>
+
+	<head>
+		<title>Ninga</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="GeneralStyle.CSS"><!--this style sheet is for all pages-->
+		<link rel="stylesheet" href="AdminDashboard.CSS"><!--this to add the spicific css sheet for your page-->
+		<link rel="icon" type="image/png" href="images/favicon.png"><!--this to add the favicon -- the small picture in the tap-->
+		<script src="javaScript.js"></script>
+		<script src='javaScreptModel.js'></script>	
+
+	</head>
+	
+	<body id="BodychangebackgrondColor">
+		<header id="headerChangeColor">
+        
+			
+			<button onclick="myFunction2()">dark theme</button>
+			<button onclick="myFunction3()" >light theme</button>
+		
+	
+
+			<button id="myBtn2"> <img src="images/edit.png" alt= 'edit' height="30" width="30"></button>
+			<!-- Trigger/Open The Modal -->
+					  
+			<img src="images/NingaCodeLogo.png" alt="Ninga Code Logo" height=59vw width=150vw>
+			<nav><ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="parent.html">Parent Dashboard</a></li>
+				<li><a href="AdministratorDashboard.html">Administrator Dashboard</a></li>
+				<li><a href="Courses.html">Courses</a></li>
+				<li><a href="tutor.html">Tutor</a></li>
+			</ul></nav>
+            
+            <div class="youAreHere">
+                <a class="here" href='index.html'>   Home</a><a class="here" href='AdministratorDashboard.html'>- Administrator Dashboard</a></div>
+
+
+				<div id="form-popup" class="modal">
+   
+					<!-- Modal content -->
+					<div class="modal-content2 ">
+						<div class="modal-header">
+						  <span class="close">&times;</span>          
+						  <h2>Customize </h2>
+						</div>
+						
+						<div class="modal-body center-modal" >
+						  <form class ="center-modal" action="#" method="post" >
+		  
+							<p style= "color:black">Background:</p>
+							<div class ="colorPicker">
+		  
+							  <a onclick="changebackgrondColor('pink')" id="pink">#FFF0F5</a>
+							  <a onclick="changebackgrondColor('gray')" id="gray">#e4e7e7  </a>
+							  <a onclick="changebackgrondColor('white')" id="white">#ffffff</a>
+							  <a onclick="changebackgrondColor('dark')" id="dark">#363945</a>
+		  
+						 </div> 
+						 
+							
+						
+						  <p style= "color:black">Font:</p>
+							
+						  <div class ="colorPicker">
+		  
+							<a onclick="changefontColor('black')" id="black">rgb(29, 29, 29)</a>
+							<a onclick="changefontColor('darkGray')" id="darkGray">#949494</a>
+							<a onclick="changefontColor('darkred')" id="darkred">  #508d69</a>
+							<a onclick="changefontColor('white')" id="white1">#ffffff</a>
+						   
+	
+							
+					   </div> 
+					   <br>
+					   
+						  </form>
+					 </div>
+					  </div>
+	
+				</header>
+			
+		<main style=height:900px;>
+			
+           
+			<h1 style="font-size:150%;">Administrator Dashboard</h1>
+			<hr>
+			<h2 style="font-size:100%;">What do you want to check?</h2>
+			
+			<ul class="AllLists noStyle" ><li><details>
+				<summary>
+					All kids	
+				</summary>
+				<ul>
+					<li>Mohammed Ahmed</li>
+					<li>Fatima Abdullah</li>
+					<li>Khalid Ibrahim</li>
+					<li>Aisha Omar</li>
+					<li>Abdullah Nasser</li>
+					<li>Sarah Hassan</li>
+					<li>Ahmed Hamza</li>
+					<li>Zahra Faisal</li>
+					<li>Abdulaziz Khalid</li>
+					<li>Laila Saad</li>
+					<li>Fahad Saeed</li>
+					<li>Noura Tariq</li>
+					<li>Ibrahim Mansour</li>
+					<li>Hana Ali</li>
+					<li>Salman Omar</li>
+					<li>Amira Ahmed</li>
+					<li>Bandar Ibrahim</li>
+					<li>Layla Abdullah</li>
+					<li>Saad Khalid</li>
+					<li>Leena Mohammed</li>
+					<li>Saeed Hamza</li>
+					<li>Maha Fahad</li>
+					<li>Talal Nasser</li>
+					<li>Mariam Khalid</li>
+					<li>Faisal Ibrahim</li>
+					<li>Hadeel Abdullah</li>
+				</ul>
+			</details></li>
+			
+			<li><details>
+				<summary>
+					All courses	
+				</summary>
+				<ul class="noStyle">	
+					<li><details>
+						<summary>
+							Introduction to Coding for Kids, Norah Alghamdi
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Kids registered in the course
+							</summary>
+							<ul >
+								<li>Mohammed Ahmed</li>
+								<li>Fatima Abdullah</li>
+								<li>Khalid Ibrahim</li>
+								<li>Aisha Omar</li>
+							</ul>
+						</details></li></ul >
+					</details></li>
+					
+					<li><details>
+						<summary>
+							Building Interactive Websites for Kids, Mohammed Alothman
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Kids registered in the course
+							</summary>
+							<ul >
+								<li>Abdullah Nasser</li>
+								<li>Sarah Hassan</li>
+								<li>Ahmed Hamza</li>
+							</ul>
+						</details></li></ul >
+					</details></li>
+					
+					<li><details>
+						<summary>
+							 Introduction to Game Development for Kids, Sarah Albadr
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Kids registered in the course
+							</summary>
+							<ul >
+								<li>Zahra Faisal</li>
+								<li>Abdulaziz Khalid</li>
+								<li>Laila Saad</li>
+								<li>Fahad Saeed</li>
+							</ul>
+						</details></li></ul >
+					</details></li>
+					
+					<li><details>
+						<summary>
+							 Advanced Coding Concepts for Kids, Mishal Alotaibi
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Kids registered in the course
+							</summary>
+							<ul >
+								<li>Noura Tariq</li>
+								<li>Ibrahim Mansour</li>
+								<li>Hana Ali</li>
+								<li>Salman Omar</li>
+								<li>Amira Ahmed</li>
+							</ul>
+						</details></li></ul >
+					</details></li>
+					
+					<li><details>
+						<summary>
+							 Introduction to Robotics and Coding for Kids, Yasmin Ahmed
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Kids registered in the course
+							</summary>
+							<ul >
+								<li>Bandar Ibrahim</li>
+								<li>Layla Abdullah</li>
+								<li>Saad Khalid</li>
+							</ul>
+						</details></li></ul >
+					</details></li>
+					
+					<li><details>
+						<summary>
+							App Development for Kids, Norah Alghamdi
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Kids registered in the course
+							</summary>
+							<ul >
+									<li>Leena Mohammed</li>
+									<li>Saeed Hamza</li>
+									<li>Maha Fahad</li>
+									<li>Talal Nasser</li>
+									<li>Mariam Khalid</li>
+									<span id="more"><li>Faisal Ibrahim</li>
+									<li>Hadeel Abdullah</li></span>
+									
+
+							</ul>
+						</details></li></ul >
+					</details></li>
+					
+					
+				</ul>
+			</details></li>
+			
+			<li><details>
+				<summary>
+					All touter	
+				</summary>
+				<ul class="noStyle">	
+					<li><details>
+						<summary>
+							<a href="SchedulePage1.html">Mohammed Alothman</a>
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Teaches:
+							</summary>
+							<ul >
+								<li>Building Interactive Websites for Kids</li>
+							</ul>
+						</details></li></ul>
+					</details></li>
+					<li><details>
+						<summary>
+							<a href="SchedulePage1.html" > Sarah Albadr</a>
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Teaches:
+							</summary>
+							<ul >
+								<li>Introduction to Game Development for Kids</li>
+							</ul>
+						</details></li></ul>
+					</details></li>
+					<li><details>
+						<summary>
+							<a href="SchedulePage1.html" >Norah Alghamdi</a>
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Teaches:
+							</summary>
+							<ul >
+								<li>Introduction to Coding for Kids</li>
+								<li>App Development for Kids</li>
+							</ul>
+						</details></li></ul>
+					</details></li>
+					<li><details>
+						<summary>
+							<a href="SchedulePage1.html" >Mishal Alotaibi</a>
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Teaches:
+							</summary>
+							<ul >
+								<li>Advanced Coding Concepts for Kids</li>
+							</ul>
+						</details></li></ul>
+					</details></li>
+					<li><details>
+						<summary>
+							<a href="SchedulePage1.html" >Yasmin Ahmed</a>
+						</summary>
+						<ul class="noStyle"><li><details>
+							<summary>
+								Teaches:
+							</summary>
+							<ul >
+								<li>Introduction to Robotics and Coding for Kids</li>
+							</ul>
+						</details></li></ul>
+					</details></li>
+			
+			</ul>
+			</details></li></ul>
+			
+		</main>
+		
+        <footer class="footer" >
+            <div class="waves" >
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+              </div>
+          
+              <h3 class="footerh3">Contact Us</h3>         
+              <ul class="menu" style="z-index: 10;">
+                <li class="menu__item"><a class="menu__link" href="#" style="color:#7D868B ;">Ninjacode@example.com |</a></li>
+                <li class="menu__item"><a class="menu__link" href="#" style="color:#7D868B ;"> 0550055055 |</a></li>
+                <li class="menu__item"><a class="menu__link" href="#" style="color:#7D868B ;"> NinjaCodeHelp@example.com</a></li>
+                <!-- <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Contact</a></li> -->
+          
+              </ul>
+            <p>&#169;2023 Ninja</p>         
+        </footer>
+	</body>
+</html>

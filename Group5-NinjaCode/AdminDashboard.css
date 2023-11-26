@@ -1,0 +1,20 @@
+h1,h2{text-align:center;}
+ 
+.AllLists{
+       display: flex;
+	   justify-content: space-around;
+       height: 70%;
+	   
+}
+
+
+details summary {
+  /* closed styles */
+  list-style-image: url('images/listStyle.png');
+}
+
+details[open] summary {
+  /* opened styles */
+  list-style-image: url('images/closeStyle.png');
+  
+}
